@@ -80,7 +80,7 @@ button {
   font-weight: bold;
   font-size: 1em;
   background: black;
-  border: solid rgb(30, 96, 131) 1px;
+  border: solid rgb(131, 129, 30) 1px;
   padding: 0.5em;
   cursor: pointer;
   color:whitesmoke;
@@ -90,7 +90,7 @@ button {
   
 
 .select-bar {
-  background-color: aquamarine;
+  background-color: rgb(35, 23, 88);
   height: 35px;
   
   margin-left: 5%;
