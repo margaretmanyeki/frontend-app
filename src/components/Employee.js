@@ -2,7 +2,7 @@ import React from "react";
 
 function Employee({ id, username, position, image, salary,handleDelete }) {
   function addToDelete() {
-    fetch(`https://nameless-thicket-02202.herokuapp.com/employees/${id}`, {
+    fetch(`http://localhost:9292/employees/${id}`, {
       method: "DELETE"
     })
       .then((response) => response.json())

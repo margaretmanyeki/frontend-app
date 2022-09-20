@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+
 import React from "react";
+
 //navbar
+
 import {  Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from './components/Home';
@@ -12,15 +15,17 @@ function App() {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    fetch("https://nameless-thicket-02202.herokuapp.com/employees")
+    fetch("http://localhost:9292/employees")
       .then((response) => response.json())
       .then((employees) => setEmployees(employees));
   }, []);
 
+  
 
   function upDateEmployees(employee) {
     setEmployees([...employees, employee]);
   }
+
 
  
   return (

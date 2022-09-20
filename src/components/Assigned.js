@@ -1,4 +1,5 @@
 import React from "react";
+
 import EmployeesContainer from "./EmployeesContainer";
 
 function Assigned({ employees, setEmployees }) {
@@ -7,6 +8,6 @@ function Assigned({ employees, setEmployees }) {
       <EmployeesContainer employees={employees} setEmployees={setEmployees} />
     </div>
   );
-  }
+}
 
 export default Assigned;

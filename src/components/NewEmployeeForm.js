@@ -17,7 +17,7 @@ function NewEmployeeForm({ updateEmployees }) {
     ) {
       alert("Please input all fields");
     } else {
-      fetch("https://nameless-thicket-02202.herokuapp.com/employees", {
+      fetch("http://localhost:9292/employees", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -45,21 +45,18 @@ function NewEmployeeForm({ updateEmployees }) {
         placeholder="username"
         onChange={doChange}
       />
-
       <input
         value={newData.position}
         name="position"
         placeholder="Position"
         onChange={doChange}
       />
-
       <input
         value={newData.image}
         name="image"
         placeholder="image"
         onChange={doChange}
       />
-
       <input
         value={newData.salary}
         name="salary"
